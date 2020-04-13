@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bef890ae-b954-4484-a166-85f8667672f5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generador/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/generador/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generador/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/generador/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
