@@ -21,7 +21,7 @@ def home(request):
         RUC = request.POST['RUC']
         Nombre = request.POST['Nombre']
         img = qr.make(RUC+Nombre)
-        img.save("static/css/"+str(RUC)+".png")
+        #img.save("static/image/"+str(RUC)+".png")
     else:
         pass
     return render(request, "home.html", {'RUC':RUC,'Nombre':Nombre})
@@ -44,5 +44,5 @@ def reporte(request):
     pdf = buffer.getvalue()
     buffer.close()
     response.write(pdf)
-    os.remove("static/css/"+str(RUC)+".png")
+    os.remove("static/image/"+str(RUC)+".png")
     return response
