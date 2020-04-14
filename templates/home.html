@@ -29,8 +29,8 @@
 
 			<div class="contact1-pic" data-tilt>
 				{% if RUC %}
-                    {% with '/image/'|add:RUC|add:'.png' as image_path %}
-                    <img  alt="No Image" src="{% static image_path %}" />
+                    {% with 'static/image/'|add:RUC|add:'.png' as image_path %}
+                    <img  alt="No Image" src="{{image_path}}"/>
                     {% endwith %}
                 {% else %}
                 <h1>Ingrese informacion Oficial</h1>
