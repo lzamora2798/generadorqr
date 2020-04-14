@@ -23,8 +23,8 @@ def home(request):
         RUC = request.POST['RUC']
         Nombre = request.POST['Nombre']
         img = qr.make(RUC+Nombre)
-        print(settings.STATIC_ROOT)
-        img.save(settings.STATIC_ROOT+"/image/"+str(RUC)+".png")
+        print(settings.MEDIA_ROOT)
+        img.save(settings.MEDIA_ROOT+"/image/"+str(RUC)+".png")
     else:
         pass
     print(Nombre)
@@ -48,5 +48,5 @@ def reporte(request):
     pdf = buffer.getvalue()
     buffer.close()
     response.write(pdf)
-    os.remove(settings.STATIC_ROOT+"/image/"+str(RUC)+".png")
+    os.remove(settings.MEDIA_ROOT+"/image/"+str(RUC)+".png")
     return response
