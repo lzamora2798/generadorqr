@@ -28,13 +28,9 @@
 			</form>
 
 			<div class="contact1-pic" data-tilt>
-				{% if RUC %}
-                    {% with '/image/'|add:RUC|add:'.png' as image_path %}
-                    <img  alt="No Image" src="{% static image_path %}" />
-                    {% endwith %}
-                {% else %}
-                <h1>Ingrese informacion Oficial</h1>
-                {% endif %}
+
+				<img  alt="No Image" src="{% static 'image/test.png' %}"  />
+
 				<a href="/reporte" class="contact1-form-btn" style="text-decoration: none;">
                 	Generar PDF
             	</a>

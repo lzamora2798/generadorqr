@@ -45,4 +45,20 @@ def reporte(request):
     buffer.close()
     response.write(pdf)
     os.remove("static/image/"+str(RUC)+".png")
+    #{% with '/image/'|add:RUC|add:'.png' as image_path %}
     return response
+
+"""
+<div class="contact1-pic" data-tilt>
+				{% if RUC %}
+                    {% with '/image/wtf.png' as image_path %}
+                    <img  alt="No Image" src="{% static image_path %}" />
+                    {% endwith %}
+                {% else %}
+                <h1>Ingrese informacion Oficial</h1>
+                {% endif %}
+				<a href="/reporte" class="contact1-form-btn" style="text-decoration: none;">
+                	Generar PDF
+            	</a>
+			</div>
+"""
