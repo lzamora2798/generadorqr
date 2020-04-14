@@ -25,4 +25,6 @@ urlpatterns = [
     path('',views.home),
     path('send',views.home),
     path('reporte',views.reporte)
-]+static(settings.STATIC_URL,document_root = settings.STATIC_ROOT)
+] + static(settings.STATIC_URL, document_root = settings.STATIC_ROOT
+) + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
+
