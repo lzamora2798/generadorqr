@@ -80,11 +80,9 @@ WSGI_APPLICATION = 'generador.wsgi.application'
 
 import dj_database_url
 
-if os.environ.get('DATABASE_URL'):
-
-    db_url = os.environ.get('DATABASE_URL')
+if os.environ.get('DATABASE_URL'): 
     DATABASES = {
-        dj_database_url.config(default=db_url)
+        'default':dj_database_url.config(default=os.environ.get('DATABASE_URL'))
     }
 else:
     DATABASES = {
