@@ -82,7 +82,7 @@ import dj_database_url
 
 if os.environ.get('DATABASE_URL'):
    DATABASES = {
-    dj_database_url.config(default=os.environ['DATABASE_URL'])
+    dj_database_url.config(default=os.environ.get('DATABASE_URL'))
     }
 else:
     DATABASES = {
