@@ -10,7 +10,7 @@ matplotlib==3.1.2
 MouseInfo==0.1.2
 numpy==1.18.1
 pandas==1.0.0
-Pillow==7.0.0
+Pillow==9.0.1
 psycopg2==2.8.5
 PyAutoGUI==0.9.48
 pygame==1.9.6
